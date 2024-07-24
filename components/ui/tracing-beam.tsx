@@ -49,15 +49,12 @@ export const TracingBeam = ({
   return (
     <motion.div
       ref={ref}
-      className={cn(
-        "relative w-full max-w-4xl mx-auto h-full bg-neutral-950",
-        className
-      )}>
-      <div className="absolute -left-4 md:-left-20 top-3">
+      className={cn("relative w-full max-w-4xl mx-auto h-full", className)}>
+      <div className="absolute left-1/2 -translate-x-[75%] top-3">
         <motion.div
           transition={{
             duration: 0.2,
-            delay: 0.5,
+            delay: 0.1,
           }}
           animate={{
             boxShadow:
@@ -69,7 +66,7 @@ export const TracingBeam = ({
           <motion.div
             transition={{
               duration: 0.2,
-              delay: 0.5,
+              delay: 0.1,
             }}
             animate={{
               backgroundColor:
@@ -90,7 +87,7 @@ export const TracingBeam = ({
             d={`M 1 0V -36 l 18 24 V ${svgHeight * 0.8} l -18 24V ${svgHeight}`}
             fill="none"
             stroke="#9091A0"
-            strokeOpacity="0.16"
+            strokeOpacity="0.20"
             transition={{
               duration: 10,
             }}></motion.path>
@@ -98,7 +95,7 @@ export const TracingBeam = ({
             d={`M 1 0V -36 l 18 24 V ${svgHeight * 0.8} l -18 24V ${svgHeight}`}
             fill="none"
             stroke="url(#gradient)"
-            strokeWidth="1.25"
+            strokeWidth="10"
             className="motion-reduce:hidden"
             transition={{
               duration: 10,

@@ -1,4 +1,5 @@
 import { AboutSection } from "@/components/about-section";
+import { AwardsSection } from "@/components/awards-section";
 import { HeroSection } from "@/components/hero-section";
 import { TimelineSection } from "@/components/timeline-section";
 import { UojImageSection } from "@/components/uoj-image-section";
@@ -11,6 +12,7 @@ export default function Home() {
       <UojImageSection />
       <AboutSection />
       <TimelineSection />
+      <AwardsSection />
     </div>
   );
 }
