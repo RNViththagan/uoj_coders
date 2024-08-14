@@ -1,3 +1,5 @@
+"use client";
+
 import { BackgroundBeams } from "@/components/ui/background-beams";
 import { Button } from "./ui/moving-border";
 
@@ -13,11 +15,11 @@ export const HeroSection = ({}: Props) => {
         <p className="w-full text-center text-white tracking-[0.27em] mb-5">
           Department of Computer Science
         </p>
-        <Button
+        {/* <Button
           borderRadius="1.75rem"
           className="bg-neutral-900 text-white mx-auto rounded-full">
           Register Now
-        </Button>
+        </Button> */}
       </div>
       <BackgroundBeams />
     </div>

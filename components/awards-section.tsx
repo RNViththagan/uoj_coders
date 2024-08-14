@@ -1,9 +1,13 @@
+"use client";
+
 import Spline from "@splinetool/react-spline/next";
 
 type Props = {};
 export const AwardsSection = ({}: Props) => {
   return (
-    <div className="bg-neutral-950 w-full pt-32 relative overflow-hidden">
+    <div
+      className="bg-neutral-950 w-full pt-32 relative overflow-hidden"
+      id="awards">
       <h1 className="font-varino text-4xl text-center font-bold text-white uppercase tracking-widest">
         Awards
       </h1>

@@ -1,3 +1,5 @@
+"use client";
+
 import Image from "next/image";
 
 import bottom_pic from "@/public/download.png";
@@ -29,19 +31,11 @@ export const UojImageSection = ({}: Props) => {
           </div>
           <div className="flex items-center gap-x-7">
             <CalendarFold size={40} />
-            <span>
-              4th & 5th of September,
-              <br />
-              2024.
-            </span>
+            <span>September 14th, 2024.</span>
           </div>
           <div className="flex items-center gap-x-7">
             <Clock5 size={40} />
-            <span>
-              9:00 AM - 5:00 PM
-              <br />
-              Onward.
-            </span>
+            <span>5:00 PM Onward.</span>
           </div>
         </div>
       </div>

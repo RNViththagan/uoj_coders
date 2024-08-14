@@ -1,4 +1,5 @@
 "use client";
+
 import React from "react";
 import Image from "next/image";
 import { twMerge } from "tailwind-merge";
@@ -15,12 +16,12 @@ import {
 
 export function TimelineSection() {
   return (
-    <div className="bg-neutral-950 w-full py-10">
+    <div className="bg-neutral-950 w-full py-10" id="timeline">
       <h1 className="font-varino text-4xl text-center font-bold text-white mb-16 uppercase tracking-widest">
         Timeline
       </h1>
       <TracingBeam className="px-6 bg-neutral-950">
-        <div className="pt-16 grid grid-rows-5 gap-12 max-w-xl mx-auto antialiased relative">
+        <div className="pt-16 grid grid-rows-5 gap-12 max-w-3/4 mx-auto antialiased relative">
           {timelineSteps.map((item, index) => (
             <div
               key={`content-${index}`}
@@ -28,7 +29,7 @@ export function TimelineSection() {
                 index % 2 !== 0 ? `justify-end` : ``
               }`}>
               <div
-                className={`w-80 py-5 flex items-center gap-x-10 ${
+                className={`w-96 py-5 flex items-center gap-x-10 ${
                   index % 2 === 0 ? `flex-row-reverse` : `flex-row`
                 }`}>
                 <div className="bg-gradient-to-bl from-[#18CCFC] via-[#6344F5] to-[#AE48FF] rounded-full p-4 text-neutral-300">
