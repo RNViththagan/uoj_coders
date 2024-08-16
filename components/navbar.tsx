@@ -43,7 +43,7 @@ export const Navbar = ({}: Props) => {
   ];
   return (
     <div className="relative w-full">
-      <div className="flex items-center justify-between w-11/12 fixed top-4 inset-x-0 mx-auto border border-white/[0.2] rounded-full bg-black shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)] z-[5000] px-8 py-2 space-x-4">
+      <div className="flex items-center justify-between w-11/12 fixed top-4 inset-x-0 mx-auto border border-white/[0.2] rounded-full bg-zinc-900 shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)] z-[5000] px-8 py-2 space-x-4">
         <Image
           src="/UoJCodersV3.0.png"
           width={600}
@@ -62,7 +62,7 @@ export const Navbar = ({}: Props) => {
           ))}
         </div>
         <Button
-          className="bg-neutral-900 text-white rounded-full"
+          className="bg-neutral-950 text-white rounded-full"
           containerClassName="h-10 w-28">
           Register
         </Button>

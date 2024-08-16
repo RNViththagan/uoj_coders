@@ -62,6 +62,7 @@ const config = {
       fontFamily: {
         varino: ["varino", ...defaultTheme.fontFamily.sans],
         telemarines: ["telemarines", ...defaultTheme.fontFamily.sans],
+        archivo: ["archivo", ...defaultTheme.fontFamily.sans],
       },
       borderRadius: {
         lg: "var(--radius)",

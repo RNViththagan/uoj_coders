@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { Kanit } from "next/font/google";
 import "./globals.css";
 
+import { Navbar } from "@/components/navbar";
+
 const inter = Kanit({
   subsets: ["latin"],
   weight: "200",
@@ -23,7 +25,10 @@ export default function RootLayout({
       <head>
         <link rel="icon" href="/favicon.ico" sizes="any" />
       </head>
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <Navbar />
+        <div>{children}</div>
+      </body>
     </html>
   );
 }
