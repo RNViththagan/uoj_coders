@@ -3,6 +3,7 @@ import { Kanit } from "next/font/google";
 import "./globals.css";
 
 import { Navbar } from "@/components/navbar";
+import CopyrightSection from "@/components/copyright-section";
 
 const inter = Kanit({
   subsets: ["latin"],
@@ -27,7 +28,8 @@ export default function RootLayout({
       </head>
       <body className={inter.className}>
         <Navbar />
-        <div>{children}</div>
+        <div className="overflow-x-hidden">{children}</div>
+        <CopyrightSection />
       </body>
     </html>
   );

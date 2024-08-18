@@ -1,7 +1,6 @@
 import { AboutSection } from "@/components/about-section";
 import { AwardsSection } from "@/components/awards-section";
 import ContactSection from "@/components/contact-section";
-import CopyrightSection from "@/components/copyright-section";
 import { HeroSection } from "@/components/hero-section";
 import RulesSection from "@/components/rules-section";
 import SponsorsSection from "@/components/sponsors-section";
@@ -19,7 +18,6 @@ export default function Home() {
       <RulesSection />
       <SponsorsSection />
       <ContactSection />
-      <CopyrightSection />
     </div>
   );
 }

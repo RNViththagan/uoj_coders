@@ -97,8 +97,8 @@ export const committee = [
   },
   {
     position: "Social Events Team Lead",
-    name: "Sankavi Mohan",
-    email: "",
+    name: "Mohan Sankavi",
+    email: "sankavimohan2000@gmail.com",
     contact: "",
   },
   {

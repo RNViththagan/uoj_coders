@@ -17,10 +17,10 @@
 }
 
 @font-face {
-  font-family: "archivo";
-  src: url("/fonts/ArchivoBlack-Regular.ttf") format("truetype");
+  font-family: "kanit";
+  src: url("/fonts/Kanit-SemiBold.ttf") format("truetype");
   font-weight: 400;
-  font-style: normal;
+  font-style: bold;
 }
 
 @layer base {

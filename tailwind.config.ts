@@ -62,7 +62,7 @@ const config = {
       fontFamily: {
         varino: ["varino", ...defaultTheme.fontFamily.sans],
         telemarines: ["telemarines", ...defaultTheme.fontFamily.sans],
-        archivo: ["archivo", ...defaultTheme.fontFamily.sans],
+        kanitBold: ["kanit", ...defaultTheme.fontFamily.sans],
       },
       borderRadius: {
         lg: "var(--radius)",
@@ -70,6 +70,18 @@ const config = {
         sm: "calc(var(--radius) - 4px)",
       },
       keyframes: {
+        "open-burger": {
+          "0%": { height: "3rem" },
+          "100%": { height: "33rem" },
+        },
+        "close-burger": {
+          "0%": { height: "33rem" },
+          "100%": { borderRadius: "9999px", height: "3rem" },
+        },
+        opacityAnimation: {
+          "0%": { opacity: "0" },
+          "100%": { opacity: "1" },
+        },
         "accordion-down": {
           from: { height: "0" },
           to: { height: "var(--radix-accordion-content-height)" },
@@ -92,7 +104,10 @@ const config = {
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+        openBurger: "open-burger 0.5s ease-in-out",
+        closeBurger: "close-burger 0.5s ease-in-out",
         spotlight: "spotlight 2s ease .75s 1 forwards",
+        opacityNavLinks: "opacityAnimation 1s ease-in-out",
       },
     },
   },

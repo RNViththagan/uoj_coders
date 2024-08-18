@@ -7,10 +7,10 @@ const RulesSection = () => {
     <div
       className="bg-neutral-950 w-full relative py-12 overflow-hidden"
       id="rules">
-      <h1 className="font-varino text-4xl text-center font-bold text-white uppercase tracking-widest">
+      <h1 className="font-varino text-xl lg:text-4xl text-center font-bold text-white uppercase tracking-widest">
         Rules & Regulations
       </h1>
-      <ul className="pt-10 w-8/12 h-auto mx-auto flex flex-col gap-y-5 text-white list-disc">
+      <ul className="pt-10 w-10/12 lg:w-8/12 h-auto mx-auto flex flex-col gap-y-5 text-white list-disc text-justify">
         <li>
           Elimination round will be held on 27th of March 2020 from 6.00pm to
           9.30pm via online.
