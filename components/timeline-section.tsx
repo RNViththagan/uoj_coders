@@ -32,7 +32,7 @@ export function TimelineSection() {
                 className={`w-96 py-5 flex items-center gap-x-10 ${
                   index % 2 === 0 ? `flex-row-reverse` : `flex-row`
                 }`}>
-                <div className="bg-gradient-to-bl from-[#18CCFC] via-[#6344F5] to-[#AE48FF] rounded-full p-4 text-neutral-300">
+                <div className="bg-white rounded-full p-4 text-zinc-900">
                   {item.badge === "UserPen" ? (
                     <UserPen size={30} />
                   ) : item.badge === "UserRoundX" ? (
@@ -49,6 +49,9 @@ export function TimelineSection() {
                   <h2 className="text-white text-lg lg:text-xl font-semibold w-fit tracking-wider">
                     {item.title}
                   </h2>
+                  <p className={"text-sm lg:text-base text-slate-200 -mt-0.5"}>
+                    {item.date}
+                  </p>
                   <p className={"text-base lg:text-lg text-slate-200"}>
                     {item.description}
                   </p>

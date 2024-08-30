@@ -23,13 +23,13 @@ const CommitteePage = () => {
               </h3>
             </div>
             <div className="w-full flex flex-col justify-start items-start gap-y-2 lg:pl-20">
-              <p className="lg:text-lg text-white font-semibold">
+              <p className="lg:text-lg text-white font-semibold tracking-wider">
                 {member.name}
               </p>
-              <p className="text-sm text-white text-wrap w-11/12">
+              <p className="text-sm 2xl:text-base text-white text-wrap w-11/12 tracking-wide">
                 {member.email}
               </p>
-              <p className="text-sm text-white">{member.contact}</p>
+              <p className="text-sm 2xl:text-base text-white tracking-wider">{member.contact}</p>
             </div>
           </div>
         ))}

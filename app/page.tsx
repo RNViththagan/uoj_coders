@@ -1,17 +1,17 @@
 import { AboutSection } from "@/components/about-section";
 import { AwardsSection } from "@/components/awards-section";
 import ContactSection from "@/components/contact-section";
+import { EventDateTimeSection } from "@/components/event-date-time-section";
 import { HeroSection } from "@/components/hero-section";
 import RulesSection from "@/components/rules-section";
 import SponsorsSection from "@/components/sponsors-section";
 import { TimelineSection } from "@/components/timeline-section";
-import { UojImageSection } from "@/components/uoj-image-section";
 
 export default function Home() {
   return (
     <div>
       <HeroSection />
-      <UojImageSection />
+      <EventDateTimeSection />
       <AboutSection />
       <TimelineSection />
       <AwardsSection />

@@ -26,7 +26,7 @@ export default function RootLayout({
       <head>
         <link rel="icon" href="/favicon.ico" sizes="any" />
       </head>
-      <body className={inter.className}>
+      <body className={`${inter.className} bg-neutral-950`}>
         <Navbar />
         <div className="overflow-x-hidden">{children}</div>
         <CopyrightSection />
