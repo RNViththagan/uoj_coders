@@ -66,15 +66,15 @@ export const Navbar = ({}: Props) => {
             width={600}
             height={100}
             alt="logo"
-            className="w-24 lg:w-28 h-auto"
+            className="w-24 lg:w-28 2xl:w-36 h-auto"
           />
-          <div className="hidden lg:flex w-3/4 mx-auto items-center justify-center gap-x-6">
+          <div className="hidden lg:flex w-3/4 mx-auto items-center justify-center gap-x-6 2xl:gap-x-10">
             {navItems.map((navItem: any, idx: number) => (
               <Link
                 key={`link=${idx}`}
                 href={navItem.link}
                 className={"text-neutral-50 hover:text-neutral-300"}>
-                <span className="hidden sm:block text-sm">{navItem.name}</span>
+                <span className="hidden sm:block text-sm 2xl:text-lg">{navItem.name}</span>
               </Link>
             ))}
           </div>
@@ -86,8 +86,8 @@ export const Navbar = ({}: Props) => {
             )}
           </div>
           <Button
-            className="bg-neutral-950 text-white rounded-full"
-            containerClassName="h-10 w-28">
+            className="bg-neutral-950 text-white rounded-full 2xl:text-lg"
+            containerClassName="h-10 w-28 2xl:h-14 2xl:w-36">
             Register
           </Button>
         </div>
