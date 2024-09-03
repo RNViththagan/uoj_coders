@@ -26,10 +26,10 @@ export const Navbar = ({}: Props) => {
       name: "About",
       link: "/#about",
     },
-    {
-      name: "Committee",
-      link: "/committee",
-    },
+    // {
+    //   name: "Committee",
+    //   link: "/committee",
+    // },
     {
       name: "Timeline",
       link: "/#timeline",
@@ -74,7 +74,9 @@ export const Navbar = ({}: Props) => {
                 key={`link=${idx}`}
                 href={navItem.link}
                 className={"text-neutral-50 hover:text-neutral-300"}>
-                <span className="hidden sm:block text-sm 2xl:text-lg">{navItem.name}</span>
+                <span className="hidden sm:block text-sm 2xl:text-lg">
+                  {navItem.name}
+                </span>
               </Link>
             ))}
           </div>
