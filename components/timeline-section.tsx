@@ -16,7 +16,7 @@ export function TimelineSection() {
       <h1 className="font-varino text-xl lg:text-4xl text-center font-bold text-white mb-16 uppercase tracking-widest">
         Timeline
       </h1>
-      <div className="w-11/12 lg:w-3/4 mx-auto">
+      <div className="w-11/12 lg:w-3/4 mx-auto  overflow-visible">
         <Timeline data={timelineSteps} />
       </div>
     </div>
@@ -92,7 +92,7 @@ const timelineSteps = [
   {
     title: "October 13, 2024",
     content: (
-      <div className="w-96 py-5 flex flex-col gap-y-1 items-start justify-center pb-80">
+      <div className="w-96 py-5 flex flex-col gap-y-1 items-start justify-center pb-20">
         <h2 className="text-white text-lg lg:text-xl font-semibold w-fit tracking-wider">
           Award Ceremony
         </h2>
