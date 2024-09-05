@@ -8,9 +8,9 @@ import { BackgroundBeams } from "./ui/background-beams";
 type Props = {};
 export const HeroSection = ({}: Props) => {
   return (
-    <div className="h-96 lg:h-screen w-full bg-neutral-950 relative flex flex-col items-center justify-center antialiased overflow-hidden">
+    <div className="h-[30rem] lg:h-screen w-full bg-neutral-950 relative flex flex-col items-center justify-center antialiased overflow-hidden">
       <Image
-        src={"/UoJCodersV3.0_moon.png"}
+        src={"/UoJCodersV3.0_with_moon.png"}
         alt="logo"
         width={500}
         height={500}

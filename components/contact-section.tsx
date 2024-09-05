@@ -1,6 +1,6 @@
 "use client";
 
-import { Linkedin } from "lucide-react";
+import { Link2, Linkedin } from "lucide-react";
 import { Facebook } from "lucide-react";
 import { Youtube } from "lucide-react";
 import { Hash } from "lucide-react";
@@ -56,7 +56,7 @@ const ContactSection = () => {
           href="https://society.jfn.ac.lk/compsoc/"
           target="_blank"
           className="w-10 h-10 2xl:w-14 2xl:h-14 rounded-full bg-zinc-500 text-white flex items-center justify-center hover:bg-white hover:text-zinc-900 transition-all">
-          <Hash size={20} />
+          <Link2 size={20} />
         </Link>
       </div>
       <div className="flex items-center justify-center gap-x-4 pt-10 2xl:text-lg">

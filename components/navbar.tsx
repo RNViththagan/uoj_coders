@@ -8,6 +8,14 @@ import { Menu } from "lucide-react";
 import { X } from "lucide-react";
 import { useState } from "react";
 import { Separator } from "./ui/separator";
+import {
+  Sheet,
+  SheetContent,
+  SheetDescription,
+  SheetHeader,
+  SheetTitle,
+  SheetTrigger,
+} from "@/components/ui/sheet";
 
 type Props = {};
 export const Navbar = ({}: Props) => {
@@ -55,11 +63,7 @@ export const Navbar = ({}: Props) => {
   return (
     <div className="relative w-full">
       <div
-        className={`w-11/12 fixed top-4 inset-x-0 mx-auto border  border-white/[0.2] bg-zinc-900 shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)] z-[5000] px-2 lg:px-8 py-2 space-x-4 transition-all ${
-          isOpen
-            ? "animate-openBurger rounded-3xl"
-            : "animate-closeBurger rounded-full"
-        }`}>
+        className={`w-11/12 fixed top-4 inset-x-0 mx-auto border rounded-full border-white/[0.2] bg-zinc-900 shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)] z-[5000] px-2 lg:px-8 py-2 space-x-4`}>
         <div className="w-full flex items-center justify-between">
           <Image
             src="/UoJCodersV3.0.png"
@@ -80,38 +84,44 @@ export const Navbar = ({}: Props) => {
               </Link>
             ))}
           </div>
-          <div className="lg:hidden transition-all" onClick={openBurger}>
-            {isOpen ? (
-              <X size={28} color="white" />
-            ) : (
-              <Menu size={28} color="white" />
-            )}
+          <div className="lg:hidden">
+            <Sheet>
+              <SheetTrigger>
+                <Menu size={28} color="white" />
+              </SheetTrigger>
+              <SheetContent side={"top"}>
+                <SheetHeader>
+                  <SheetTitle>Navigation Menu</SheetTitle>
+                </SheetHeader>
+                <div
+                  className={
+                    "flex flex-col items-center gap-y-5 w-11/12 mx-auto mt-16 mb-10 "
+                  }>
+                  {navItems.map((navItem: any, idx: number) => (
+                    <div
+                      key={`link=${idx}`}
+                      className="w-full h-10 flex flex-col items-center justify-center gap-y-5">
+                      <Link
+                        href={navItem.link}
+                        className={
+                          "text-neutral-50 hover:text-neutral-300 text-base"
+                        }>
+                        {navItem.name}
+                      </Link>
+                      {idx !== navItems.length - 1 && (
+                        <Separator className="bg-zinc-700" />
+                      )}
+                    </div>
+                  ))}
+                </div>
+              </SheetContent>
+            </Sheet>
           </div>
           <Button
             className="bg-neutral-950 text-white rounded-full 2xl:text-lg"
             containerClassName="h-10 w-28 2xl:h-14 2xl:w-36">
             Register
           </Button>
-        </div>
-        <div
-          className={`${
-            isOpen ? "flex flex-col items-center gap-y-5 lg:hidden" : "hidden"
-          } w-11/12 mx-auto h-[33rem] transition-all mt-16 animate-opacityNavLinks`}>
-          {navItems.map((navItem: any, idx: number) => (
-            <div
-              key={`link=${idx}`}
-              onClick={openBurger}
-              className="w-full h-10 flex flex-col items-center justify-center gap-y-5">
-              <Link
-                href={navItem.link}
-                className={"text-neutral-50 hover:text-neutral-300 text-base"}>
-                {navItem.name}
-              </Link>
-              {idx !== navItems.length - 1 && (
-                <Separator className="bg-zinc-700" />
-              )}
-            </div>
-          ))}
         </div>
       </div>
     </div>

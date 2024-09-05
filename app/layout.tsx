@@ -28,7 +28,7 @@ export default function RootLayout({
       </head>
       <body className={`${inter.className} bg-neutral-950`}>
         <Navbar />
-        <div className="overflow-x-hidden">{children}</div>
+        <div className="overflow-x-hidden relative">{children}</div>
         <CopyrightSection />
       </body>
     </html>
