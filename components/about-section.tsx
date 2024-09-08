@@ -2,6 +2,8 @@
 
 import { motion } from "framer-motion";
 import { LampContainer } from "@/components/ui/lamp";
+import Link from "next/link";
+import { Button } from "./ui/button";
 
 export function AboutSection() {
   return (
@@ -46,14 +48,20 @@ export function AboutSection() {
               ease: "easeInOut",
             }}
             className="text-white py-4 text-sm lg:text-lg 2xl:text-xl text-justify font-medium">
-            The competition is set to take place on September 14th and 15th,
-            2024, at the Department of Computer Science, University of Jaffna.
-            The 12-hour coding marathon will be conducted online using the
-            HackerRank platform (http://hackerrank.com), with participants
-            expected to be present at the competition venue. Participants are
-            encouraged to solve problems utilizing appropriate data structures
-            and algorithms, with questions predominantly related to real-world
-            problems.
+            The competition is set to take place on October 12th and 13th, 2024,
+            at the Department of Computer Science, University of Jaffna. The
+            12-hour coding marathon will be conducted online using the
+            <Button
+              variant={"link"}
+              className="text-blue-300 py-4 text-sm lg:text-lg 2xl:text-xl font-medium">
+              <Link href={"https://www.hackerrank.com"} target="_blank">
+                HackerRank
+              </Link>
+            </Button>{" "}
+            platform, with participants expected to be present at the
+            competition venue. Participants are encouraged to solve problems
+            utilizing appropriate data structures and algorithms, with questions
+            predominantly related to real-world problems.
           </motion.p>
           <motion.p
             initial={{ opacity: 0.5, y: 100 }}
