@@ -1,16 +1,14 @@
 "use client";
 
-import bottom_pic from "@/public/download.png";
-
 import Image from "next/image";
 import { BackgroundBeams } from "./ui/background-beams";
 
 type Props = {};
 export const HeroSection = ({}: Props) => {
   return (
-    <div className="h-[30rem] lg:h-screen w-full bg-neutral-950 relative flex flex-col items-center justify-center antialiased overflow-hidden">
+    <div className="h-[30rem] lg:h-screen w-full bg-black relative flex flex-col items-center justify-center antialiased overflow-hidden">
       <Image
-        src={"/UoJCodersV3.0_with_moon.png"}
+        src={"/compsoc/uojcoders/v3/UoJCodersV3.0_with_moon.png"}
         alt="logo"
         width={500}
         height={500}
@@ -18,7 +16,7 @@ export const HeroSection = ({}: Props) => {
       />
       <BackgroundBeams />
       <Image
-        src={bottom_pic}
+        src={"/compsoc/uojcoders/v3/download.png"}
         width={2624}
         height={854}
         alt="University of Jafnna B&W"
