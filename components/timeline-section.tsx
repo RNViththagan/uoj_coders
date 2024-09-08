@@ -35,7 +35,7 @@ const timelineSteps = [
           <UserPen size={60} />
         </div>
         <p className="text-base lg:text-lg text-slate-200">
-          Registers opening for all participants.
+          The registration will be open for all participants.
         </p>
       </div>
     ),
@@ -51,7 +51,7 @@ const timelineSteps = [
           <UserRoundX size={60} />
         </div>
         <p className="text-base lg:text-lg text-slate-200">
-          Last day to register for the competition.
+          This is the last day to register for the competition.
         </p>
       </div>
     ),
@@ -67,7 +67,7 @@ const timelineSteps = [
           <UserRoundMinus size={60} />
         </div>
         <p className="text-base lg:text-lg text-slate-200">
-          This round will be conducted online.
+          This round will be conducted online
         </p>
       </div>
     ),
@@ -83,8 +83,7 @@ const timelineSteps = [
           <Rocket size={60} />
         </div>
         <p className="text-base lg:text-lg text-slate-200">
-          Participants are expected to be present at the venue of the
-          competition.
+          Participants are expected to be present at the competition venue.
         </p>
       </div>
     ),
@@ -94,13 +93,14 @@ const timelineSteps = [
     content: (
       <div className="w-64 lg:w-96 py-5 flex flex-col gap-y-1 items-start justify-center pb-10">
         <h2 className="text-white text-lg lg:text-xl font-semibold w-fit tracking-wider">
-          Award Ceremony
+          Awarding Ceremony
         </h2>
         <div className="w-full h-52 rounded-lg flex items-center justify-center text-white bg-gradient-to-bl from-[#FFC837] via-[#FF8008] to-[#FF4500]">
           <Trophy size={60} />
         </div>
         <p className="text-base lg:text-lg text-slate-200">
-          Celebrate the winners and participants.
+          The winners will be awarded, and certificates will be provided to
+          all participants.
         </p>
       </div>
     ),

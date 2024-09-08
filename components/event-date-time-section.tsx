@@ -26,7 +26,7 @@ export const EventDateTimeSection = ({}: Props) => {
         <div className="flex items-center gap-x-7 flex-col lg:flex-row text-center lg:text-left gap-y-3 lg:gap-y-0 ">
           <Clock5 size={40} className="text-sm" />
           <span className="font-semibold text-sm lg:text-lg 2xl:text-xl lg:font-bold tracking-wider">
-            4.00 PM Onward.
+            4.00 PM Onwards.
           </span>
         </div>
       </div>

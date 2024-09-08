@@ -119,13 +119,13 @@ export const Navbar = ({}: Props) => {
               </SheetContent>
             </Sheet>
           </div>
-          <Button
-            className="bg-neutral-950 text-white rounded-full 2xl:text-lg"
-            containerClassName="h-10 w-28 2xl:h-14 2xl:w-36">
-              <Link href={"https://forms.gle/ivcyuZTn3ghSQ3iV8"} target="_blank">
-            Register
-            </Link>
-          </Button>
+          <Link href={"https://forms.gle/ivcyuZTn3ghSQ3iV8"} target="_blank">
+            <Button
+              className="bg-neutral-950 text-white rounded-full 2xl:text-lg"
+              containerClassName="h-10 w-28 2xl:h-14 2xl:w-36">
+              Register
+            </Button>
+          </Link>
         </div>
       </div>
     </div>
