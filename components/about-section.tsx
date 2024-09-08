@@ -51,7 +51,10 @@ export function AboutSection() {
             The competition is set to take place on October 12th and 13th, 2024,
             at the Department of Computer Science, University of Jaffna. The
             12-hour coding marathon will be conducted online using the
-            <Button variant={"link"}>
+            <Button
+              variant={"link"}
+              className="text-blue-300 py-4 text-sm lg:text-lg 2xl:text-xl font-medium"
+              asChild>
               <Link href={"https://www.hackerrank.com"} target="_blank">
                 HackerRank
               </Link>
