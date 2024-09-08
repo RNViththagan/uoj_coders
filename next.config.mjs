@@ -1,6 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  basepath: "compsoc/uojcoders/v3",
+  // basepath: "compsoc/uojcoders/v3",
   images: {
     remotePatterns: [
       {
