@@ -11,6 +11,7 @@ const CopyrightSection = () => {
           &copy; 2024{" "}
           <Link
             href={"https://society.jfn.ac.lk/compsoc/"}
+            target={"_blank"}
             className="underline tracking-wide">
             Computer Society
           </Link>

@@ -25,7 +25,7 @@ export function TimelineSection() {
 
 const timelineSteps = [
   {
-    title: "August 12, 2024",
+    title: "September 09, 2024",
     content: (
       <div className="w-64 lg:w-96 py-5 flex flex-col gap-y-1 items-start justify-center pb-10">
         <h2 className="text-white text-lg lg:text-xl font-semibold w-fit tracking-wider">
@@ -41,7 +41,7 @@ const timelineSteps = [
     ),
   },
   {
-    title: "August 28, 2024",
+    title: "September 23, 2024",
     content: (
       <div className="w-64 lg:w-96 py-5 flex flex-col gap-y-1 items-start justify-center pb-10">
         <h2 className="text-white text-lg lg:text-xl font-semibold w-fit tracking-wider">
@@ -57,7 +57,7 @@ const timelineSteps = [
     ),
   },
   {
-    title: "September 1, 2024",
+    title: "September 26, 2024",
     content: (
       <div className="w-64 lg:w-96 py-5 flex flex-col gap-y-1 items-start justify-center pb-10">
         <h2 className="text-white text-lg lg:text-xl font-semibold w-fit tracking-wider">
@@ -73,7 +73,7 @@ const timelineSteps = [
     ),
   },
   {
-    title: "September 14, 2024",
+    title: "October 12, 2024",
     content: (
       <div className="w-64 lg:w-96 py-5 flex flex-col gap-y-1 items-start justify-center pb-10">
         <h2 className="text-white text-lg lg:text-xl font-semibold w-fit tracking-wider">
@@ -90,7 +90,7 @@ const timelineSteps = [
     ),
   },
   {
-    title: "September 15, 2024",
+    title: "October 13, 2024",
     content: (
       <div className="w-64 lg:w-96 py-5 flex flex-col gap-y-1 items-start justify-center pb-10">
         <h2 className="text-white text-lg lg:text-xl font-semibold w-fit tracking-wider">

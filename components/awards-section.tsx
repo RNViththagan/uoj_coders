@@ -34,7 +34,7 @@ export const AwardsSection = ({}: Props) => {
             className="w-64 lg:w-64 2xl:w-72"
           />
           <h1 className="font-kanitBold font-black text-white text-2xl lg:text-3xl 2xl:text-4xl tracking-wider">
-            Rs. 20,000
+            Rs. 30,000
           </h1>
         </div>
         <div className="lg:order-3 flex flex-col items-center justify-center gap-y-10">
@@ -46,7 +46,7 @@ export const AwardsSection = ({}: Props) => {
             className="w-64 lg:w-60 2xl:w-64"
           />
           <h1 className="font-kanitBold font-black text-white text-2xl lg:text-3xl 2xl:text-4xl tracking-wider">
-            Rs. 10,000
+            Rs. 20,000
           </h1>
         </div>
       </div>
