@@ -8,7 +8,7 @@ const RulesSection = () => {
       className="bg-neutral-950 w-full relative py-12 overflow-hidden"
       id="rules">
       <h1 className="font-varino text-xl lg:text-4xl text-center font-bold text-white uppercase tracking-widest">
-        Guidlines
+        Guidelines
       </h1>
       <ul className="pt-10 w-10/12 lg:w-8/12 h-auto mx-auto 2xl:text-lg flex flex-col gap-y-5 text-white list-disc text-justify">
         <li>
