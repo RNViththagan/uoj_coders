@@ -32,7 +32,7 @@ export const Navbar = ({}: Props) => {
     },
     {
       name: "About",
-      link: "/#about",
+      link: "#about",
     },
     // {
     //   name: "Committee",
@@ -40,23 +40,23 @@ export const Navbar = ({}: Props) => {
     // },
     {
       name: "Timeline",
-      link: "/#timeline",
+      link: "#timeline",
     },
     {
       name: "Awards",
-      link: "/#awards",
+      link: "#awards",
     },
     {
-      name: "Rules",
-      link: "/#rules",
+      name: "Guidelines",
+      link: "#guidelines",
     },
     {
       name: "Sponsors",
-      link: "/#sponsors",
+      link: "#sponsors",
     },
     {
       name: "Contact",
-      link: "/#contact",
+      link: "#contact",
     },
   ];
 
@@ -73,16 +73,17 @@ export const Navbar = ({}: Props) => {
             className="w-24 lg:w-28 2xl:w-36 h-auto"
           />
           <div className="hidden lg:flex w-3/4 mx-auto items-center justify-center gap-x-6 2xl:gap-x-10">
-            {navItems.map((navItem: any, idx: number) => (
-              <Link
-                key={`link=${idx}`}
-                href={navItem.link}
-                className={"text-neutral-50 hover:text-neutral-300"}>
-                <span className="hidden sm:block text-sm 2xl:text-lg">
-                  {navItem.name}
-                </span>
-              </Link>
-            ))}
+            {navItems &&
+              navItems.map((navItem: any, idx: number) => (
+                <Link
+                  key={`link=${idx}`}
+                  href={navItem.link}
+                  className={"text-neutral-50 hover:text-neutral-300"}>
+                  <span className="hidden sm:block text-sm 2xl:text-lg">
+                    {navItem.name}
+                  </span>
+                </Link>
+              ))}
           </div>
           <div className="lg:hidden">
             <Sheet>
@@ -97,22 +98,23 @@ export const Navbar = ({}: Props) => {
                   className={
                     "flex flex-col items-center gap-y-5 w-11/12 mx-auto mt-16 mb-10 "
                   }>
-                  {navItems.map((navItem: any, idx: number) => (
-                    <div
-                      key={`link=${idx}`}
-                      className="w-full h-10 flex flex-col items-center justify-center gap-y-5">
-                      <Link
-                        href={navItem.link}
-                        className={
-                          "text-neutral-50 hover:text-neutral-300 text-base"
-                        }>
-                        {navItem.name}
-                      </Link>
-                      {idx !== navItems.length - 1 && (
-                        <Separator className="bg-zinc-700" />
-                      )}
-                    </div>
-                  ))}
+                  {navItems &&
+                    navItems.map((navItem: any, idx: number) => (
+                      <div
+                        key={`link=${idx}`}
+                        className="w-full h-10 flex flex-col items-center justify-center gap-y-5">
+                        <Link
+                          href={navItem.link}
+                          className={
+                            "text-neutral-50 hover:text-neutral-300 text-base"
+                          }>
+                          {navItem.name}
+                        </Link>
+                        {idx !== navItems.length - 1 && (
+                          <Separator className="bg-zinc-700" />
+                        )}
+                      </div>
+                    ))}
                 </div>
               </SheetContent>
             </Sheet>

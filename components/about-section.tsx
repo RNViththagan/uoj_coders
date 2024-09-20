@@ -29,7 +29,7 @@ export function AboutSection() {
               duration: 0.8,
               ease: "easeInOut",
             }}
-            className="py-4 text-white text-sm lg:text-lg 2xl:text-xl text-justify font-medium">
+            className="py-4 text-white text-sm lg:text-lg 2xl:text-xl text-justify font-extralight lg:font-light">
             UoJCoders v3.0, organized by the Computer Society (CompSoc) and the
             Department of Computer Science at the University of Jaffna, aims to
             enhance the problem-solving and programming skills among
@@ -47,13 +47,14 @@ export function AboutSection() {
               duration: 0.8,
               ease: "easeInOut",
             }}
-            className="text-white py-4 text-sm lg:text-lg 2xl:text-xl text-justify font-medium">
+            className="text-white py-4 text-sm lg:text-lg 2xl:text-xl text-justify font-extralight lg:font-light">
             The competition is set to take place on October 12th and 13th, 2024,
             at the Department of Computer Science, University of Jaffna. The
             12-hour coding marathon will be conducted online using the
             <Button
               variant={"link"}
-              className="text-blue-300 py-4 text-sm lg:text-lg 2xl:text-xl font-medium">
+              className="text-blue-300 py-4 text-sm lg:text-lg 2xl:text-xl font-extralight lg:font-light"
+              asChild>
               <Link href={"https://www.hackerrank.com"} target="_blank">
                 HackerRank
               </Link>
@@ -71,7 +72,7 @@ export function AboutSection() {
               duration: 0.8,
               ease: "easeInOut",
             }}
-            className="text-white py-4 text-sm lg:text-lg 2xl:text-xl text-justify font-medium">
+            className="text-white py-4 text-sm lg:text-lg 2xl:text-xl text-justify font-extralight lg:font-light">
             Participation in UoJCoders v3.0 will significantly improve
             students&apos; problem-solving, coding, and teamwork skills. Given
             the rapid nature of the competition, it will also enhance
@@ -88,7 +89,7 @@ export function AboutSection() {
               duration: 0.8,
               ease: "easeInOut",
             }}
-            className="text-white py-4 text-sm lg:text-lg 2xl:text-xl text-justify font-medium">
+            className="text-white py-4 text-sm lg:text-lg 2xl:text-xl text-justify font-extralight lg:font-light">
             Although UoJCoders v2.0 was announced for the 4th and 5th of April
             2020, it could not be conducted due to the COVID-19 pandemic. We are
             excited to resume the competition with UoJCoders v3.0 and look

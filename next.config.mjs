@@ -1,6 +1,5 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  // basepath: "compsoc/uojcoders/v3",
   images: {
     remotePatterns: [
       {
@@ -10,7 +9,18 @@ const nextConfig = {
         pathname: "/**",
       },
     ],
+    unoptimized: true,
   },
+  // async generateStaticParams() {
+  //   return {
+  //     "/": { page: "/" },
+  //     "/committee": { page: "/committee" },
+  //     "/404": { page: "/not-found" },
+  //     "/500": { page: "/error" },
+  //     "/_error": { page: "/error" },
+  //     "/_not-found": { page: "/not-found" },
+  //   };
+  // },
 };
 
 export default nextConfig;

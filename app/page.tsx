@@ -1,3 +1,5 @@
+"use client";
+
 import { AboutSection } from "@/components/about-section";
 import { AwardsSection } from "@/components/awards-section";
 import ContactSection from "@/components/contact-section";

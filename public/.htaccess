@@ -1,0 +1,24 @@
+# Enable Rewrite Engine
+
+RewriteEngine On
+
+# Set the base directory for your application
+
+RewriteBase /compsoc/uojcoders/v3/
+
+# Serve committee.html when /committee is requested
+
+RewriteRule ^committee$ /compsoc/uojcoders/v3/committee.html [L]
+
+# If the request is for a file or directory that exists, serve it.
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# Route all existing Next.js routes to index.html
+
+RewriteRule ^(.\*)$ /compsoc/uojcoders/v3/index.html [L]
+
+# Custom 404 for fake routes (if it doesn't match existing routes)
+
+ErrorDocument 404 /compsoc/uojcoders/v3/404.html

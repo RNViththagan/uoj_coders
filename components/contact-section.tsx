@@ -26,7 +26,9 @@ const ContactSection = () => {
           <p>+94 77 448 0178</p>
         </div>
         <div className="flex flex-col items-center justify-center gap-y-2 text-white">
-          <p className="font-semibold tracking-wide text-lg 2xl:text-xl">V. Sayanishan</p>
+          <p className="font-semibold tracking-wide text-lg 2xl:text-xl">
+            V. Sayanishan
+          </p>
           <p className="text-sm 2xl:text-base text-zinc-400 font-medium">
             Secretary (CompSoc)
           </p>
@@ -66,7 +68,7 @@ const ContactSection = () => {
       <div className="mt-5 flex flex-col items-center justify-center gap-y-2 text-white 2xl:text-lg">
         <p>Computer Society (CompSoc),</p>
         <p>Department of Computer Science,</p>
-        <p>University of Jaffna</p>
+        <p>University of Jaffna.</p>
       </div>
     </div>
   );
