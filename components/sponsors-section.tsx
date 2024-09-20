@@ -1,6 +1,8 @@
 "use client";
 
 import { SparklesCore } from "@/components/ui/sparkles";
+import Image from "next/image";
+import Link from "next/link";
 
 const SponsorsSection = () => {
   return (
@@ -26,11 +28,18 @@ const SponsorsSection = () => {
               Platinum Sponsor
             </h2>
             <div className="flex flex-wrap justify-center gap-x-4">
-              <img
-                src="/compsoc/uojcoders/v3/sponsors/Oyslans-white-letters.png"
-                alt="Oyslans"
-                className="w-96 h-auto"
-              />
+              <Link
+                href={"https://www.oyslans.com/about-us"}
+                target="_blank"
+                className="cursor-pointer z-30">
+                <Image
+                  width={300}
+                  height={300}
+                  src="/sponsors/Oyslans-white-letters.png"
+                  alt="Oyslans"
+                  className="w-96 h-auto"
+                />
+              </Link>
               {/* <img
                 src="/images/sponsors/sponsor2.png"
                 alt="sponsor2"

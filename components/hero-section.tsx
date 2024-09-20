@@ -7,14 +7,18 @@ type Props = {};
 export const HeroSection = ({}: Props) => {
   return (
     <div className="h-[30rem] lg:h-screen w-full bg-black relative flex flex-col items-center justify-center antialiased overflow-hidden">
-      <img
-        src={"/compsoc/uojcoders/v3/UoJCodersV3.0_with_moon.png"}
+      <Image
+        width={600}
+        height={600}
+        src={"/UoJCodersV3.0_with_moon.png"}
         alt="logo"
         className="w-80 lg:w-96 z-30"
       />
       <BackgroundBeams />
-      <img
-        src={"/compsoc/uojcoders/v3/download.png"}
+      <Image
+        width={1600}
+        height={400}
+        src={"/download.png"}
         alt="University of Jafnna B&W"
         className="absolute left-0 bottom-0 translate-y-[40%] w-screen h-auto filter grayscale z-40"
       />

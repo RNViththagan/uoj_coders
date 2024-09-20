@@ -16,7 +16,7 @@ const RulesSection = () => {
         <li>
           The elimination round will be held online on September 26th, 2024,
           with an introduction from 6:30 PM to 7:00 PM and the competition from
-          7:00 PM to 8:00 PM,
+          7:00 PM to 8:00 PM.
         </li>
         <Separator className="bg-zinc-600" />
         <li>

@@ -4,22 +4,21 @@
 
 @font-face {
   font-family: "telemarines";
-  src: url("/compsoc/uojcoders/v3/fonts/telemarinesboldexpand.ttf")
-    format("truetype");
+  src: url("/fonts/telemarinesboldexpand.ttf") format("truetype");
   font-weight: 500;
   font-style: normal;
 }
 
 @font-face {
   font-family: "varino";
-  src: url("/compsoc/uojcoders/v3/fonts/Varino.ttf") format("truetype");
+  src: url("/fonts/Varino.ttf") format("truetype");
   font-weight: 500;
   font-style: normal;
 }
 
 @font-face {
   font-family: "kanit";
-  src: url("/compsoc/uojcoders/v3/fonts/Kanit-SemiBold.ttf") format("truetype");
+  src: url("/fonts/Kanit-SemiBold.ttf") format("truetype");
   font-weight: 400;
   font-style: bold;
 }
