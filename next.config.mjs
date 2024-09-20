@@ -1,5 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  export: "out",
+  basePath: "/compsoc/uojcoders/v3",
   images: {
     remotePatterns: [
       {
