@@ -63,7 +63,7 @@ const timelineSteps = [
         <h2 className="text-white text-lg lg:text-xl font-semibold w-fit tracking-wider">
           Elimination Round
         </h2>
-        <div className="w-full h-52 rounded-lg flex items-center justify-center text-white bg-gradient-to-bl from-[#FF8EFC] via-[#8E44FF] to-[#348F50]">
+        <div className="w-full h-52 rounded-lg flex items-center justify-center text-white bg-gradient-to-bl from-[#7A1CAC] via-[#AD49E1] to-[#EBD3F8]">
           <UserRoundMinus size={60} />
         </div>
         <p className="text-base lg:text-lg text-slate-200">

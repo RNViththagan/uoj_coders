@@ -13,6 +13,7 @@ const nextConfig = {
         pathname: "/**",
       },
     ],
+    unoptimized: true,
   },
   // async generateStaticParams() {
   //   return {

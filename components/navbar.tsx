@@ -32,7 +32,7 @@ export const Navbar = ({}: Props) => {
     },
     {
       name: "About",
-      link: "/#about",
+      link: "#about",
     },
     // {
     //   name: "Committee",
@@ -40,23 +40,23 @@ export const Navbar = ({}: Props) => {
     // },
     {
       name: "Timeline",
-      link: "/#timeline",
+      link: "#timeline",
     },
     {
       name: "Awards",
-      link: "/#awards",
+      link: "#awards",
     },
     {
-      name: "Rules",
-      link: "/#rules",
+      name: "Guidelines",
+      link: "#guidelines",
     },
     {
       name: "Sponsors",
-      link: "/#sponsors",
+      link: "#sponsors",
     },
     {
       name: "Contact",
-      link: "/#contact",
+      link: "#contact",
     },
   ];
 
@@ -65,10 +65,8 @@ export const Navbar = ({}: Props) => {
       <div
         className={`w-11/12 fixed top-4 inset-x-0 mx-auto border rounded-full border-white/[0.2] bg-zinc-900 shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)] z-[5000] px-2 lg:px-8 py-2 space-x-4`}>
         <div className="w-full flex items-center justify-between">
-          <Image
+          <img
             src="/compsoc/uojcoders/v3/UoJCodersV3.png"
-            width={600}
-            height={100}
             alt="logo"
             className="w-24 lg:w-28 2xl:w-36 h-auto"
           />
