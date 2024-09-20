@@ -12,6 +12,7 @@ export const EventDateTimeSection = ({}: Props) => {
         <div className="flex items-center gap-x-7 flex-col lg:flex-row text-center lg:text-left gap-y-3 lg:gap-y-0 ">
           <MapPinned size={40} className="text-sm 2xl:text-base" />
           <span className="font-normal text-sm lg:text-lg 2xl:text-xl lg:font-normal tracking-wider">
+
             Department of Computer Science,
             <br />
             University of Jaffna.

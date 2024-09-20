@@ -1,9 +1,5 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: "export",
-  // trailingSlah: true,
-  // skipTrailingSlashRedirect: true,
-  basePath: "/compsoc/uojcoders/v3",
   images: {
     remotePatterns: [
       {
