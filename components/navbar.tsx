@@ -59,6 +59,10 @@ export const Navbar = ({}: Props) => {
       link: "#elimination",
     },
     {
+      name: "Finalists",
+      link: "#finalists",
+    },
+    {
       name: "Contact",
       link: "#contact",
     },
@@ -76,7 +80,7 @@ export const Navbar = ({}: Props) => {
             alt="logo"
             className="w-24 lg:w-28 2xl:w-36 h-auto"
           />
-          <div className="hidden lg:flex w-3/4 mx-auto items-center justify-center gap-x-6 2xl:gap-x-10">
+          <div className="hidden lg:flex w-3/4 items-center justify-end gap-x-6 2xl:gap-x-10">
             {navItems &&
               navItems.map((navItem: any, idx: number) => (
                 <Link
@@ -91,10 +95,10 @@ export const Navbar = ({}: Props) => {
           </div>
           <div className="lg:hidden">
             <Sheet>
-              <SheetTrigger>
-                <Menu size={28} color="white" />
+              <SheetTrigger className="flex items-center justify-center">
+                <Menu size={28} color="white" className="mr-5" />
               </SheetTrigger>
-              <SheetContent side={"top"}>
+              <SheetContent side={"right"}>
                 <SheetHeader>
                   <SheetTitle>Navigation Menu</SheetTitle>
                 </SheetHeader>
@@ -123,13 +127,13 @@ export const Navbar = ({}: Props) => {
               </SheetContent>
             </Sheet>
           </div>
-          <Link href={"https://forms.gle/ivcyuZTn3ghSQ3iV8"} target="_blank">
+          {/* <Link href={"https://forms.gle/ivcyuZTn3ghSQ3iV8"} target="_blank">
             <Button
               className="bg-neutral-950 text-white rounded-full 2xl:text-lg"
               containerClassName="h-10 w-28 2xl:h-14 2xl:w-36">
               Register
             </Button>
-          </Link>
+          </Link> */}
         </div>
       </div>
     </div>

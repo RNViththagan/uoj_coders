@@ -4,6 +4,7 @@ import "./globals.css";
 
 import { Navbar } from "@/components/navbar";
 import CopyrightSection from "@/components/copyright-section";
+import { ThemeProvider } from "@/components/theme-provider";
 
 const inter = Kanit({
   subsets: ["latin"],
@@ -27,9 +28,15 @@ export default function RootLayout({
         <link rel="icon" href="/compsoc/uojcoders/v3/favicon.ico" sizes="any" />
       </head>
       <body className={`${inter.className} bg-neutral-950`}>
-        <Navbar />
-        <div className="overflow-x-hidden relative">{children}</div>
-        <CopyrightSection />
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+          disableTransitionOnChange>
+          <Navbar />
+          <div className="overflow-x-hidden relative">{children}</div>
+          <CopyrightSection />
+        </ThemeProvider>
       </body>
     </html>
   );
