@@ -55,6 +55,10 @@ export const Navbar = ({}: Props) => {
       link: "#sponsors",
     },
     {
+      name: "Elimination Round",
+      link: "#elimination",
+    },
+    {
       name: "Contact",
       link: "#contact",
     },
