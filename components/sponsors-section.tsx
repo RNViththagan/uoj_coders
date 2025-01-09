@@ -6,7 +6,7 @@ import Link from "next/link";
 const SponsorsSection = () => {
   return (
     <div className="bg-neutral-900 w-full overflow-hidden" id="sponsors">
-      <div className="h-[70rem] lg:h-[60rem] relative w-full bg-black flex flex-col items-center justify-center gap-y-20 overflow-hidden rounded-md">
+      <div className="h-[70rem] lg:h-[65rem] relative w-full bg-black flex flex-col items-center justify-center gap-y-20 overflow-hidden rounded-md">
         <div className="w-full absolute inset-0 h-full">
           <SparklesCore
             id="tsparticlesfullpage"

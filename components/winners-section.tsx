@@ -62,7 +62,14 @@ export const WinnersSection = ({}: Props) => {
             <p className="text-sm text-gray-300 font-normal">
               University of Peradeniya
             </p>
-            <div className="flex flex-col gap-y-1 items-center mt-5">
+            <div className="flex gap-x-2 items-center justify-center mt-4 mb-3">
+              {/* <span className="w-10 h-[1px] bg-white" /> */}
+              <span className="w-1 h-1 bg-white rounded-full"></span>
+              <span className="w-1 h-1 bg-white rounded-full"></span>
+              <span className="w-1 h-1 bg-white rounded-full"></span>
+              {/* <span className="w-10 h-[1px] bg-white" /> */}
+            </div>
+            <div className="flex flex-col gap-y-1 items-center">
               <h3 className="font-semibold text-lg">Mr. M.T.H. Peiris</h3>
               <p className="text-sm font-light italic text-zinc-300">Leader</p>
             </div>
@@ -90,7 +97,12 @@ export const WinnersSection = ({}: Props) => {
             <p className="text-sm text-gray-300 font-normal">
               University of Jaffna
             </p>
-            <div className="flex flex-col gap-y-1 items-center mt-5">
+            <div className="flex gap-x-2 items-center justify-center mt-4 mb-3">
+              <span className="w-1 h-1 bg-white rounded-full"></span>
+              <span className="w-1 h-1 bg-white rounded-full"></span>
+              <span className="w-1 h-1 bg-white rounded-full"></span>
+            </div>
+            <div className="flex flex-col gap-y-1 items-center">
               <h3 className="font-semibold text-lg">Mr. A.L.A.A. Upathilak</h3>
               <p className="text-sm font-light italic text-zinc-300">Leader</p>
             </div>
