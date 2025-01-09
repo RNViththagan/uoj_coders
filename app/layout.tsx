@@ -3,8 +3,8 @@ import { Kanit } from "next/font/google";
 import "./globals.css";
 
 import { Navbar } from "@/components/navbar";
-import CopyrightSection from "@/components/copyright-section";
 import { ThemeProvider } from "@/components/theme-provider";
+import Footer from "@/components/footer";
 
 const inter = Kanit({
   subsets: ["latin"],
@@ -35,7 +35,7 @@ export default function RootLayout({
           disableTransitionOnChange>
           <Navbar />
           <div className="overflow-x-hidden relative">{children}</div>
-          <CopyrightSection />
+          <Footer />
         </ThemeProvider>
       </body>
     </html>

@@ -31,40 +31,45 @@ export const Navbar = ({}: Props) => {
       link: "/",
     },
     {
-      name: "About",
-      link: "#about",
+      name: "Committee",
+      link: "/committee",
     },
-    // {
-    //   name: "Committee",
-    //   link: "/committee",
-    // },
+    {
+      name: "About",
+      link: "/#about",
+    },
+
     {
       name: "Timeline",
-      link: "#timeline",
+      link: "/#timeline",
     },
     {
       name: "Awards",
-      link: "#awards",
+      link: "/#awards",
     },
     {
       name: "Guidelines",
-      link: "#guidelines",
+      link: "/#guidelines",
     },
     {
       name: "Sponsors",
-      link: "#sponsors",
+      link: "/#sponsors",
     },
     {
       name: "Elimination Round",
-      link: "#elimination",
+      link: "/#elimination",
     },
     {
       name: "Finalists",
-      link: "#finalists",
+      link: "/#finalists",
+    },
+    {
+      name: "Winners",
+      link: "/#winners",
     },
     {
       name: "Contact",
-      link: "#contact",
+      link: "/#contact",
     },
   ];
 
@@ -73,13 +78,15 @@ export const Navbar = ({}: Props) => {
       <div
         className={`w-11/12 fixed top-4 inset-x-0 mx-auto border rounded-full border-white/[0.2] bg-zinc-900 shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)] z-[5000] px-2 lg:px-8 py-2 space-x-4`}>
         <div className="w-full flex items-center justify-between">
-          <Image
-            src="/compsoc/uojcoders/v3/UoJCodersV3.png"
-            width={600}
-            height={100}
-            alt="logo"
-            className="w-24 lg:w-28 2xl:w-36 h-auto"
-          />
+          <Link href={"/"}>
+            <Image
+              src="/compsoc/uojcoders/v3/UoJCodersV3.png"
+              width={600}
+              height={100}
+              alt="logo"
+              className="w-24 lg:w-28 2xl:w-36 h-auto"
+            />
+          </Link>
           <div className="hidden lg:flex w-3/4 items-center justify-end gap-x-6 2xl:gap-x-10">
             {navItems &&
               navItems.map((navItem: any, idx: number) => (
@@ -104,7 +111,7 @@ export const Navbar = ({}: Props) => {
                 </SheetHeader>
                 <div
                   className={
-                    "flex flex-col items-center gap-y-5 w-11/12 mx-auto mt-16 mb-10 "
+                    "flex flex-col items-center gap-y-5 w-11/12 mx-auto mt-8 mb-5"
                   }>
                   {navItems &&
                     navItems.map((navItem: any, idx: number) => (

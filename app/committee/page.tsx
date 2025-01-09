@@ -1,3 +1,4 @@
+import { LinkPreview } from "@/components/ui/link-preview";
 import { committee } from "@/data/committee";
 
 const CommitteePage = () => {
@@ -17,20 +18,28 @@ const CommitteePage = () => {
               }`}
               key={index}>
               <div className="w-full flex justify-start items-start">
-                <h3 className="font-semibold text-white text-base lg:text-lg ml-5 tracking-wider text-wrap w-3/4">
+                <h3 className="font-semibold text-white text-sm lg:text-lg ml-5 lg:tracking-wider text-wrap w-3/4">
                   {member.position === committee[index - 1]?.position
                     ? ""
                     : member.position}
                 </h3>
               </div>
               <div className="w-full flex flex-col justify-start items-start gap-y-2 lg:pl-20">
-                <p className="lg:text-lg text-white font-semibold tracking-wider">
-                  {member.name}
-                </p>
-                <p className="text-sm 2xl:text-base text-white text-wrap w-11/12 tracking-wide">
+                {member.linkedin ? (
+                  <LinkPreview url={member.linkedin}>
+                    <p className="text-sm font-normal lg:text-lg text-white lg:font-semibold lg:tracking-wider">
+                      {member.name}
+                    </p>
+                  </LinkPreview>
+                ) : (
+                  <p className="text-sm font-normal lg:text-lg text-white lg:font-semibold lg:tracking-wider">
+                    {member.name}
+                  </p>
+                )}
+                <p className="text-xs font-extralight lg:font-normal lg:text-sm 2xl:text-base text-white text-wrap w-11/12 tracking-wide">
                   {member.email}
                 </p>
-                <p className="text-sm 2xl:text-base text-white tracking-wider">
+                <p className="text-xs font-extralight lg:font-normal lg:text-sm 2xl:text-base text-white tracking-wider">
                   {member.contact}
                 </p>
               </div>

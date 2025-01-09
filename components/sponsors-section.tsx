@@ -6,7 +6,7 @@ import Link from "next/link";
 const SponsorsSection = () => {
   return (
     <div className="bg-neutral-900 w-full overflow-hidden" id="sponsors">
-      <div className="h-[40rem] lg:h-[43rem] relative w-full bg-black flex flex-col items-center justify-center gap-y-20 overflow-hidden rounded-md">
+      <div className="h-[70rem] lg:h-[65rem] relative w-full bg-black flex flex-col items-center justify-center gap-y-20 overflow-hidden rounded-md">
         <div className="w-full absolute inset-0 h-full">
           <SparklesCore
             id="tsparticlesfullpage"
@@ -47,6 +47,34 @@ const SponsorsSection = () => {
               <Link href={""} target="_blank" className="cursor-pointer z-30">
                 <img
                   src="/compsoc/uojcoders/v3/sponsors/TF bold.png"
+                  alt="Oyslans"
+                  className="mt-5 w-72 lg:w-96 h-auto"
+                />
+              </Link>
+            </div>
+          </div>
+          <div className="w-full flex flex-col justify-center items-center gap-y-5 mt-16">
+            <h2 className="text-3xl font-bold tracking-wide">Event Partners</h2>
+            <div className="flex flex-col items-center justify-center gap-y-6">
+              <div className="flex flex-col lg:flex-row items-center gap-y-6 lg:gap-x-20 lg:justify-around">
+                <Link href={""} target="_blank" className="cursor-pointer z-30">
+                  <img
+                    src="/compsoc/uojcoders/v3/sponsors/logo_english2.png"
+                    alt="Oyslans"
+                    className="mt-5 w-72 lg:w-96 h-auto"
+                  />
+                </Link>
+                <Link href={""} target="_blank" className="cursor-pointer z-30">
+                  <img
+                    src="/compsoc/uojcoders/v3/sponsors/senzmate.png"
+                    alt="Oyslans"
+                    className="mt-5 w-72 lg:w-96 h-auto"
+                  />
+                </Link>
+              </div>
+              <Link href={""} target="_blank" className="cursor-pointer z-30">
+                <img
+                  src="/compsoc/uojcoders/v3/sponsors/Uncom-Logo-1.png"
                   alt="Oyslans"
                   className="mt-5 w-72 lg:w-96 h-auto"
                 />

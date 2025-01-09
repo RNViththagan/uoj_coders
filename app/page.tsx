@@ -10,6 +10,7 @@ import { HeroSection } from "@/components/hero-section";
 import RulesSection from "@/components/rules-section";
 import SponsorsSection from "@/components/sponsors-section";
 import { TimelineSection } from "@/components/timeline-section";
+import { WinnersSection } from "@/components/winners-section";
 import { useTheme } from "next-themes";
 
 export default function Home() {
@@ -27,6 +28,7 @@ export default function Home() {
       <SponsorsSection />
       <EliminationRound />
       <Finalists />
+      <WinnersSection />
       <ContactSection />
     </div>
   );
