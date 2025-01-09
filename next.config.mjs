@@ -10,6 +10,9 @@ const nextConfig = {
       },
     ],
     unoptimized: true,
+    domains: [
+      "api.microlink.io", // Microlink Image Preview
+    ],
   },
   // async generateStaticParams() {
   //   return {
