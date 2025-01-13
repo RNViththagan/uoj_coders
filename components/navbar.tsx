@@ -31,10 +31,6 @@ export const Navbar = ({}: Props) => {
       link: "/",
     },
     {
-      name: "Committee",
-      link: "/committee",
-    },
-    {
       name: "About",
       link: "/#about",
     },
@@ -44,39 +40,43 @@ export const Navbar = ({}: Props) => {
       link: "/#timeline",
     },
     {
-      name: "Awards",
-      link: "/#awards",
-    },
-    {
-      name: "Guidelines",
-      link: "/#guidelines",
-    },
-    {
-      name: "Sponsors",
-      link: "/#sponsors",
-    },
-    {
-      name: "Elimination Round",
-      link: "/#elimination",
+      name: "Winners",
+      link: "/#winners",
     },
     {
       name: "Finalists",
       link: "/#finalists",
     },
     {
-      name: "Winners",
-      link: "/#winners",
+      name: "Elimination Round",
+      link: "/#elimination",
+    },
+    {
+      name: "Guidelines",
+      link: "/#guidelines",
+    },
+    {
+      name: "Gallery",
+      link: "/#gallery",
+    },
+    {
+      name: "Sponsors",
+      link: "/#sponsors",
     },
     {
       name: "Contact",
       link: "/#contact",
+    },
+    {
+      name: "Committee",
+      link: "/committee",
     },
   ];
 
   return (
     <div className="relative w-full">
       <div
-        className={`w-11/12 fixed top-4 inset-x-0 mx-auto border rounded-full border-white/[0.2] bg-zinc-900 shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)] z-[5000] px-2 lg:px-8 py-2 space-x-4`}>
+        className={`w-11/12 fixed top-4 inset-x-0 mx-auto border rounded-full border-white/[0.2] bg-zinc-900 shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)] z-50 px-2 lg:px-8 py-2 space-x-4`}>
         <div className="w-full flex items-center justify-between">
           <Link href={"/"}>
             <Image

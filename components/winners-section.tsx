@@ -23,6 +23,9 @@ export const WinnersSection = ({}: Props) => {
           />
 
           <div className="flex flex-col items-center gap-y-1">
+            <h1 className="mb-5 font-kanitBold font-black text-white/50 text-2xl lg:text-3xl 2xl:text-4xl tracking-wider">
+              Rs. 50,000
+            </h1>
             <h1 className="font-kanitBold font-black text-white text-2xl lg:text-3xl 2xl:text-4xl tracking-wider">
               Team Glory
             </h1>
@@ -53,6 +56,9 @@ export const WinnersSection = ({}: Props) => {
             className="w-64 lg:w-64 2xl:w-72"
           />
           <div className="flex flex-col items-center gap-y-1">
+            <h1 className="mb-5 font-kanitBold font-black text-white/50 text-2xl lg:text-3xl 2xl:text-4xl tracking-wider">
+              Rs. 30,000
+            </h1>
             <h1 className="font-kanitBold font-black text-white text-2xl lg:text-3xl 2xl:text-4xl tracking-wider">
               Croods{" "}
               <span className="absolute top-0 right-0 text-sm text-gray-400 opacity-80 italic font-normal">
@@ -63,9 +69,11 @@ export const WinnersSection = ({}: Props) => {
               University of Peradeniya
             </p>
             <div className="flex gap-x-2 items-center justify-center mt-4 mb-3">
+              {/* <span className="w-10 h-[1px] bg-white" /> */}
               <span className="w-1 h-1 bg-white rounded-full"></span>
               <span className="w-1 h-1 bg-white rounded-full"></span>
               <span className="w-1 h-1 bg-white rounded-full"></span>
+              {/* <span className="w-10 h-[1px] bg-white" /> */}
             </div>
             <div className="flex flex-col gap-y-1 items-center">
               <h3 className="font-semibold text-lg">Mr. M.T.H. Peiris</h3>
@@ -86,6 +94,9 @@ export const WinnersSection = ({}: Props) => {
             className="w-64 lg:w-64 2xl:w-72"
           />
           <div className="flex flex-col items-center gap-y-1">
+            <h1 className="mb-5 font-kanitBold font-black text-white/50 text-2xl lg:text-3xl 2xl:text-4xl tracking-wider">
+              Rs. 30,000
+            </h1>
             <h1 className="font-kanitBold font-black text-white text-2xl lg:text-3xl 2xl:text-4xl tracking-wider">
               Phantoms_SL{" "}
               <span className="absolute top-0 right-0 text-sm text-gray-400 opacity-80 italic font-normal">

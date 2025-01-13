@@ -95,13 +95,12 @@ export const LinkPreview = ({
         closeDelay={100}
         onOpenChange={(open) => {
           setOpen(open);
-        }}
-      >
+        }}>
         <HoverCardPrimitive.Trigger
           onMouseMove={handleMouseMove}
           className={cn("text-black dark:text-white", className)}
           href={url}
-        >
+          target="_blank">
           {children}
         </HoverCardPrimitive.Trigger>
 
@@ -109,8 +108,7 @@ export const LinkPreview = ({
           className="[transform-origin:var(--radix-hover-card-content-transform-origin)]"
           side="top"
           align="center"
-          sideOffset={10}
-        >
+          sideOffset={10}>
           <AnimatePresence>
             {isOpen && (
               <motion.div
@@ -129,13 +127,12 @@ export const LinkPreview = ({
                 className="shadow-xl rounded-xl"
                 style={{
                   x: translateX,
-                }}
-              >
+                }}>
                 <Link
                   href={url}
+                  target="_blank"
                   className="block p-1 bg-white border-2 border-transparent shadow rounded-xl hover:border-neutral-200 dark:hover:border-neutral-800"
-                  style={{ fontSize: 0 }}
-                >
+                  style={{ fontSize: 0 }}>
                   <Image
                     src={isStatic ? imageSrc : src}
                     width={width}
