@@ -6,6 +6,7 @@ import ContactSection from "@/components/contact-section";
 import EliminationRound from "@/components/elimination-round";
 import { EventDateTimeSection } from "@/components/event-date-time-section";
 import Finalists from "@/components/finalists";
+import GallerySection from "@/components/gallery-section";
 import { HeroSection } from "@/components/hero-section";
 import RulesSection from "@/components/rules-section";
 import SponsorsSection from "@/components/sponsors-section";
@@ -23,12 +24,13 @@ export default function Home() {
       <EventDateTimeSection />
       <AboutSection />
       <TimelineSection />
-      <AwardsSection />
-      <RulesSection />
-      <SponsorsSection />
-      <EliminationRound />
-      <Finalists />
       <WinnersSection />
+      <Finalists />
+      <EliminationRound />
+      <RulesSection />
+      <GallerySection />
+      {/* <AwardsSection /> */}
+      <SponsorsSection />
       <ContactSection />
     </div>
   );

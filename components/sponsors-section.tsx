@@ -57,16 +57,22 @@ const SponsorsSection = () => {
             <h2 className="text-3xl font-bold tracking-wide">Event Partners</h2>
             <div className="flex flex-col items-center justify-center gap-y-6">
               <div className="flex flex-col lg:flex-row items-center gap-y-6 lg:gap-x-20 lg:justify-around">
-                <Link href={""} target="_blank" className="cursor-pointer z-30">
+                <Link
+                  href={"https://www.senzmate.com/"}
+                  target="_blank"
+                  className="cursor-pointer z-30">
                   <img
-                    src="/sponsors/logo_english2.png"
+                    src="/sponsors/senzmate.png"
                     alt="Oyslans"
                     className="mt-5 w-72 lg:w-96 h-auto"
                   />
                 </Link>
-                <Link href={""} target="_blank" className="cursor-pointer z-30">
+                <Link
+                  href={"https://unicomsd.com/"}
+                  target="_blank"
+                  className="cursor-pointer z-30">
                   <img
-                    src="/sponsors/senzmate.png"
+                    src="/sponsors/Uncom-Logo-1.png"
                     alt="Oyslans"
                     className="mt-5 w-72 lg:w-96 h-auto"
                   />
@@ -74,7 +80,7 @@ const SponsorsSection = () => {
               </div>
               <Link href={""} target="_blank" className="cursor-pointer z-30">
                 <img
-                  src="/sponsors/Uncom-Logo-1.png"
+                  src="/sponsors/logo_english2.png"
                   alt="Oyslans"
                   className="mt-5 w-72 lg:w-96 h-auto"
                 />
