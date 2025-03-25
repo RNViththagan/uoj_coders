@@ -5,7 +5,12 @@ import { LampContainer } from "@/components/ui/lamp";
 import Link from "next/link";
 import { Button } from "./ui/button";
 
-const LinkButton = ({ link, title }) => {
+interface LinkButtonProps {
+    link: string;
+    title: string;
+}
+
+const LinkButton: React.FC<LinkButtonProps> = ({ link, title }) => {
     return (
         <Button
             variant="link"
