@@ -5,6 +5,20 @@ import { LampContainer } from "@/components/ui/lamp";
 import Link from "next/link";
 import { Button } from "./ui/button";
 
+const LinkButton = ({ link, title }) => {
+    return (
+        <Button
+            variant="link"
+            className="text-blue-300 py-4 text-sm lg:text-lg 2xl:text-xl font-extralight lg:font-light"
+            asChild
+        >
+            <Link href={link} target="_blank" rel="noopener noreferrer">
+                {title}
+            </Link>
+        </Button>
+    );
+};
+
 export function AboutSection() {
   return (
     <div id="about">
@@ -49,20 +63,13 @@ export function AboutSection() {
             }}
             className="text-white py-4 text-sm lg:text-lg 2xl:text-xl text-justify font-extralight lg:font-light">
             The competition is set to take place on October 12th and 13th, 2024,
-            at the Department of Computer Science, University of Jaffna. The
-            12-hour coding marathon will be conducted online using the
-            <Button
-              variant={"link"}
-              className="text-blue-300 py-4 text-sm lg:text-lg 2xl:text-xl font-extralight lg:font-light"
-              asChild>
-              <Link href={"https://www.hackerrank.com"} target="_blank">
-                HackerRank
-              </Link>
-            </Button>{" "}
-            platform, with participants expected to be present at the
-            competition venue. Participants are encouraged to solve problems
-            utilizing appropriate data structures and algorithms, with questions
-            predominantly related to real-world problems.
+            at the Department of Computer Science, University of Jaffna. The 12-hour coding marathon will be conducted online using the <LinkButton link={"http://moodle.org/"} title={"Moodle"}/> platform enhanced with the  <LinkButton link={"https://vpl.dis.ulpgc.es/"} title={"Virtual Programming Lab (VPL) plug-in"}/> and
+              <LinkButton link={"https://vpl.dis.ulpgc.es/documentation/vpl-jail-system-3.0.1/"} title={"a separate Jail system"}/>
+              . The Jail system enables isolated, secure coding sessions for each participant.
+              The participants are expected to be present at the competition venue.
+              Participants are encouraged to solve problems utilizing appropriate data
+              structures and algorithms, with questions predominantly related to
+              real-world problems.
           </motion.p>
           <motion.p
             initial={{ opacity: 0.5, y: 100 }}
