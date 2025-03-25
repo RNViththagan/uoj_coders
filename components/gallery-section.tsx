@@ -6,7 +6,7 @@ const galleryImages = [
     id: 4,
     content: <ImageSkeleton />,
     className: "h-56 md:col-span-2",
-    thumbnail: "/compsoc/uojcoders/v3/gallery/1Q9A2967.jpg",
+    thumbnail: "/compsoc/uojcoders/v3/gallery/1Q9A2973.jpg",
   },
   {
     id: 5,
@@ -18,7 +18,7 @@ const galleryImages = [
     id: 6,
     content: <ImageSkeleton />,
     className: "h-56 md:col-span-1",
-    thumbnail: "/compsoc/uojcoders/v3/gallery/1Q9A2973.jpg",
+    thumbnail: "/compsoc/uojcoders/v3/gallery/1Q9A2967.jpg",
   },
   {
     id: 7,
